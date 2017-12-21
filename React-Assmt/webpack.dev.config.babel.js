@@ -1,10 +1,10 @@
 'use strict';
+import path from 'path';
+import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-
+var resourcePath 
 var rootPath = path.join(__dirname);
 
 module.exports = {
@@ -46,7 +46,9 @@ module.exports = {
   ],
   resolve: {
     alias: {
+        static: path.resolve(__dirname, 'src/static/'),
         config$: path.join(rootPath, 'config', process.env.NODE_ENV)
+
     },
     extensions: ['.js', '.json','.css']
   },

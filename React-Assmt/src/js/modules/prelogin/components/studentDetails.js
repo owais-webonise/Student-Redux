@@ -2,7 +2,7 @@ class Home extends React.Component {
     render() {
         return (
           <div>
-            <span className="studentName">Name: {this.props.location.query.param1}  {this.props.location.query.param2}</span>
+            <span className="studentName">Name: {this.props.location.query.firstName}  {this.props.location.query.lastName}</span>
             <table className="studentDetails table">
             <tr>
               <th> English </th>
@@ -12,11 +12,11 @@ class Home extends React.Component {
               <th> Percentage </th>
              </tr>
               <tr>
-                <td> {this.props.location.query.param3} </td>
-                <td> {this.props.location.query.param4} </td>
-                <td> {this.props.location.query.param5} </td>
-                <td> {this.props.location.query.param6} </td>
-                <td> {this.props.location.query.param7} </td>
+                <td> {this.props.location.query.english} </td>
+                <td> {this.props.location.query.hindi} </td>
+                <td> {this.props.location.query.maths} </td>
+                <td> {this.props.location.query.total} </td>
+                <td> {this.props.location.query.percent} </td>
               </tr>
             </table>
          </div>

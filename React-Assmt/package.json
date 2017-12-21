@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack --config ./webpack.config.js",
-    "start": "NODE_ENV=local_development webpack-dev-server --content-base ./src --config webpack.config.development.js --port=3000 --host=0.0.0.0",
+    "build": "npm run clean && webpack --config ./webpack.config.babel.js",
+    "start": "NODE_ENV=local_development webpack-dev-server --content-base ./src --config webpack.dev.config.babel.js --port=3008 --host=0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "author": "vijayraj nathe",
+  "author": "owais kazi",
   "license": "ISC",
   "bugs": {
     "url": ""
@@ -28,6 +28,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "copy-webpack-plugin": "^4.0.1",
+    "css-aliases": "^1.1.9",
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",

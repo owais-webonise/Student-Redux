@@ -12,10 +12,11 @@ export default function(state = initialState,action) {
             }
         case 'SEARCH_STUDENT': 
             state.updatedResults = Object.assign([],state.allResults);
+            var payload = action.payload.toUpperCase();
             return {
                 ...state,
                 updatedResults: state.updatedResults.filter(item => {
-                    return (item.firstName.toUpperCase().indexOf(action.payload.toUpperCase()) > -1 || item.lastName.toUpperCase().indexOf(action.payload.toUpperCase()) > -1);
+                    return (item.firstName.toUpperCase().indexOf(payload) > -1 || item.lastName.toUpperCase().indexOf(payload) > -1);
                 })
             }
            

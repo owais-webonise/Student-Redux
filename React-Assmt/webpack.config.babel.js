@@ -1,15 +1,13 @@
 'use strict';
-
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var StatsPlugin = require('stats-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+import path from 'path';
+import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import StatsPlugin from 'stats-webpack-plugin';
+import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 
 var rootPath = path.join(__dirname);
-
 
 function BuildCompletionNotifyPlugin() {
 };
