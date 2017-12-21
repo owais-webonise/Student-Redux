@@ -1,0 +1,25 @@
+body {
+    background: #95d6a0;
+}
+
+.failColor,.failColor .field  {
+  color: red
+}
+
+.field {
+  text-decoration: none;
+  color: #000;
+}
+.App table{
+  width: 600px
+}
+.studentDetails th,.studentDetails td {
+ width: 18%;
+text-align: center;
+
+}
+
+.studentName {
+margin: 26px;
+font-weight: bold;
+}

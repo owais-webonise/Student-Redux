@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "no-dupe-keys": 2,
+    "no-cond-assign": 2,
+    "no-sparse-arrays": 2,
+    "eqeqeq": 1,
+    "radix": 1,
+    "no-unused-vars": 1,
+    "no-else-return": 1
+  }
+}
