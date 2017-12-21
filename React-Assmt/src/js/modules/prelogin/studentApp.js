@@ -29,7 +29,13 @@ class StudentApp extends Component {
           percentageResults[key].percentage= percentage;
         }
         var obj= {
-          firstName: value.firstName, lastName: value.lastName,english: value.marks.english, hindi: value.marks.hindi, maths: value.marks.mathematics, total: total, percent:percentage
+          firstName: value.firstName, 
+          lastName: value.lastName,
+          english: value.marks.english,
+          hindi: value.marks.hindi,
+          maths: value.marks.mathematics,
+          total: total, 
+          percent:percentage
         }
         return (
           <tr key = {key} className = {percentage < 35 ? "failColor" : null}>
@@ -46,8 +52,8 @@ class StudentApp extends Component {
 
   handleCheck(marks, event) {
     var filteredData = Object.assign([], allResults.results);
-    var min = CHECKBOXENUM[marks].min;
-    var max = CHECKBOXENUM[marks].max;
+    var min = CHECKBOXENUM[marks].MIN;
+    var max = CHECKBOXENUM[marks].MAX;
     var id = event.target.id;
     var check = event.target.checked;
     filteredData = filteredData.filter(function (index) {
